@@ -1,3 +1,92 @@
-body {
-  background: peachpuff;
+*{
+  outline: 1px solid red;
+  text-align:center;
+  color:white;
+  text-align: center;
 }
+
+body{margin:0;}
+
+.container{
+  background-color: purple;
+  color:white;
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
+  
+}
+.wrapper{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.bcd{
+  display:flex;
+  flex-direction:row;
+  flex-grow:2;
+  min-height: 25vh;
+}
+
+.bcd div{
+  flex-grow: 1;
+}
+.efg{
+  display:flex;
+  flex-direction:row;
+  flex-grow:2;
+  min-height: 25vh;
+}
+
+.efg div{
+  flex-grow: 1;
+}
+
+main{
+  flex-grow:2;
+  min-height:50vh;
+  width:100%;
+}
+
+header, footer{
+  flex-grow:1;
+  max-height: 25vh;
+
+}
+
+@media(min-width:600px){
+  *{
+      color:black;
+  }
+  .container{
+      background-color: white;
+      flex-direction:row;
+      flex-wrap:wrap;
+
+  }
+header{
+  width:100%;
+  min-height:20vh;
+}
+
+.wrapper{
+  width:60vh
+}
+.bcd{
+ 
+  min-height:40vh;
+}
+
+.efg{
+
+  min-height:40vh;
+}
+.wrapper{
+  flex-grow: 2;
+}
+
+footer{
+min-height:80vh;
+}
+}
+/* https://github.com/lherna1371/flex-box-demo */
